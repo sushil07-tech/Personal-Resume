@@ -1,0 +1,70 @@
+.introduction{grid-area: intro;}
+.contacts{grid-area: contacts;}
+.codeProfile{grid-area: profile;}
+.education{grid-area: education;}
+.skills{grid-area: skills;}
+.workexp{grid-area: work;}
+.certifications{grid-area: certi;}
+.language{grid-area: language;}
+
+.grid-container{
+    /* background-color: #f5f4f2 ; */
+    background-color: blanchedalmond;
+    display: grid;
+    grid-template-areas: 
+    'intro intro'
+    'contacts profile'
+    'education skills'
+    'work certi'
+    'language language';
+    gap: 0.1cm;
+
+}
+.grid-container > div{
+    border-radius: 25px;
+    border-width: 5px;
+    background-color: #f5f4f2;
+    padding-left: 5%;
+    place-items: center;
+}
+h1,h2,h3,p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+
+@media only screen and (max-width: 767px){
+    .grid-container{
+        /* background-color: #f5f4f2 ; */
+        background-color: blanchedalmond;
+        display: grid;
+        grid-template-areas: 
+        'intro'
+        'contacts'
+        'profile'
+        'education' 
+        'skills'
+        'work' 
+        'certi'
+        'language';
+        gap: 0.05cm;
+    
+    }
+}
+@media only screen and (min-width: 834px) and (maxs-width: 1194px){
+    .grid-container{
+        /* background-color: #f5f4f2 ; */
+        background-color: blanchedalmond;
+        display: grid;
+        grid-template-areas: 
+        'intro'
+        'contacts'
+        'profile'
+        'education' 
+        'skills'
+        'work' 
+        'certi'
+        'language';
+        gap: 0.05cm;
+    
+    }
+}
